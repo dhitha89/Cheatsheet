@@ -16,7 +16,6 @@ git switch -c new-branch
 git checkout newbranch
 git switch branch-name
 
-
 **Pull a new branch created on Github repo to local**
 git fetch
 
@@ -48,6 +47,9 @@ git commit -m "new file added"
 git push origin main 
 git push
 
+**Sync after fork**
+git pull upstream main or(git fetch upstream --> git merge upstream/main)
+git push origin main
 ______________________________________________________________________________________________________________
 
 # Viewing Changes
