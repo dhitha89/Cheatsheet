@@ -35,6 +35,17 @@ git add file.txt
 **Commit your changes**
 git commit -m "new file added"
 
+**Stage and Commit**
+git commit -a -m "updated env"
+
+**NOTE:**
+touch new.txt
+git commit -a -m "added new text file" --> wont work since new.txt file is still not tracked
+
+**SO FOLLOW TWO STEPS:**
+git add .
+git commit -m"new txt file added"
+
 **Publish your changes from local to remote repository**
 git push origin main 
 git push
