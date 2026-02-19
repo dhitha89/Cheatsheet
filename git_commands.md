@@ -67,18 +67,6 @@ git push origin --delete <branch-name>
 **Delete branch locally**
 git branch -D <branch-name>
 
-**Removes filename from every commit,Recreates each commit again,Generates NEW commit hashes**
-git filter-repo --path <filename> --invert-paths
-Ex: Before filter-repo
-A1 → add app.js + .env
-B1 → update app.js
-C1 → add README
-
-After filter-repo
-A2 → add app.js
-B2 → update app.js
-C2 → add README
-
 **Unstage files**
 git restore --staged file.txt
 
@@ -106,11 +94,26 @@ git reset --hard HEAD~1
 git rm 
 
 **Replay your commits on top of another branch ex feature branch**
-git switch feature
-git rebase main
+git switch feature **-->** git rebase main
 
 **Takes all commits on your feature branch and combines them into a single commit on main**
 git merge --squash feature
 
 **Grab a single specific commit from anywhere and places it onto your current branch**
 git cherry-pick commit-id
+
+______________________________________________________________________________________________________________
+
+# Uncommon commands
+
+**Removes filename from every commit,Recreates each commit again,Generates NEW commit hashes**
+git filter-repo --path <filename> --invert-paths
+Ex: Before filter-repo
+A1 → add app.js + .env
+B1 → update app.js
+C1 → add README
+
+After filter-repo
+A2 → add app.js
+B2 → update app.js
+C2 → add README
