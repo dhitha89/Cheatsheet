@@ -104,3 +104,13 @@ git reset --hard HEAD~1
 
 **Delete file from folder and Git (tracked removal)**
 git rm 
+
+**Replay your commits on top of another branch ex feature branch**
+git switch feature
+git rebase main
+
+**Takes all commits on your feature branch and combines them into a single commit on main**
+git merge --squash feature
+
+**Grab a single specific commit from anywhere and places it onto your current branch**
+git cherry-pick commit-id
