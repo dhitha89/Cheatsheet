@@ -32,14 +32,6 @@ ________________________________________________________________________________
 **Stage files**
 git add file.txt
 
-**Unstage files**
-git rm --cached file.txt
-or
-git restore --staged file.txt
-
-**Remove all files from staging (before initial commit)**
-git rm --cached -r .
-
 **Commit your changes**
 git commit -m "new file added"
 
@@ -76,3 +68,28 @@ A2 → add app.js
 B2 → update app.js
 C2 → add README
 
+**Unstage files**
+git restore --staged file.txt
+
+**Remove from staging and Git tracking, keep file locally.**
+git rm --cached file.txt
+
+**Unstage everything and make all files untracked.**
+git rm --cached -r .
+
+**Undo edits and restore last committed version**
+git restore file.txt 
+OR
+git checkout file.txt
+
+**Undo last commit, but keep files staged**
+git reset --soft HEAD~1
+
+**Undo last commit, and unstage files**
+git reset --mixed HEAD~1
+
+**Delete commit and delete changes**
+git reset --hard HEAD~1
+
+**Delete file from folder and Git (tracked removal)**
+git rm 
