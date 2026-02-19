@@ -84,6 +84,7 @@ git checkout file.txt
 **Undo last commit, but keep files staged**
 git reset --soft HEAD~1
 
+git reset
 **Undo last commit, and unstage files**
 git reset --mixed HEAD~1
 
@@ -117,3 +118,4 @@ After filter-repo
 A2 → add app.js
 B2 → update app.js
 C2 → add README
+
