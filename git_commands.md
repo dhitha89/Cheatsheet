@@ -58,4 +58,21 @@ ________________________________________________________________________________
 git log
 git diff file.txt
 
+**Delete branch on remote**
+git push origin --delete <branch-name>
+
+**Delete branch locally**
+git branch -D <branch-name>
+
+**Removes filename from every commit,Recreates each commit again,Generates NEW commit hashes**
+git filter-repo --path <filename> --invert-paths
+Ex: Before filter-repo
+A1 → add app.js + .env
+B1 → update app.js
+C1 → add README
+
+After filter-repo
+A2 → add app.js
+B2 → update app.js
+C2 → add README
 
