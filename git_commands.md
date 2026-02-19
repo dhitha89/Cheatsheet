@@ -84,7 +84,7 @@ git checkout file.txt
 **Undo last commit, but keep files staged**
 git reset --soft HEAD~1
 
-git reset
+git reset commands:
 **Undo last commit, and unstage files**
 git reset --mixed HEAD~1
 
