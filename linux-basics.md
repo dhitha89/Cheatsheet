@@ -42,16 +42,17 @@ Linux is built in four layers. Every command you type travels through all four.
 | Applications | Running your workloads — web servers, containers, scripts |
 
 **How a command flows through the layers:**
-
+```
 You type a command
-↓
+        ↓
 Shell picks it up and translates it
-↓
+        ↓
 Kernel decides what needs to happen
-↓
+        ↓
 Hardware does the actual work
-↓
+        ↓
 Result travels back up to you
+```
 
 ---
 
