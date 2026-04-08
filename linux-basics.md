@@ -62,15 +62,15 @@ Everything starts from `/` — the root directory.
 
 | Directory | What lives here |
 |---|---|
-| `/home` | Personal files for each user |
-| `/etc` | All config files — nginx, ssh, hosts |
-| `/var/log` | Log files |
-| `/bin` | Basic commands — ls, cd, pwd, cp, mv |
-| `/sbin` | Admin commands — reboot, fdisk, iptables |
-| `/usr` | Additional programs and commands |
-| `/dev` | Device files — disks, USB, terminals |
-| `/tmp` | Temporary files — cleared on reboot |
-| `/opt` | Third party software |
+| `/home` | Personal files and folders for each user |
+| `/etc` | System and application config files — nginx, ssh, hosts |
+| `/var/log` | Log files — your first stop when something breaks |
+| `/bin` | Essential commands available to all users — ls, cp, mv, cat |
+| `/sbin` | System admin commands — reboot, fdisk, iptables |
+| `/usr` | Installed programs and their files — git, python, curl |
+| `/dev` | Device files — disks, USB drives, terminals |
+| `/tmp` | Temporary files — wiped clean on every reboot |
+| `/opt` | Optional third party software — manually installed apps |
 
 **Two directories every DevOps engineer must know:**
 ```bash
